@@ -34,3 +34,20 @@ student2.class = 9.
 
 console.log(student);
 console.log(student2);
+
+let car = {
+    name: "ford",
+    model: "fiesta",
+    weight: 850,
+    color: "white",
+    start: function (a) {
+        console.log('car has started');
+    },
+    drive: function () {
+        this.start();
+        console.log('car is being driven');
+    }
+};
+console.log(car.model);
+car.drive();
+
